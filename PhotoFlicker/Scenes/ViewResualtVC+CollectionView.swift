@@ -38,10 +38,6 @@ extension ViewResultVc : UICollectionViewDelegate , UICollectionViewDataSource ,
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:collectionView.frame.size.width, height: view.frame.height / 2.5)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailImageVc") as! DetailImageVc
         let photo = photoModel?.photos?.photo?[indexPath.item].urlM ?? ""
@@ -52,6 +48,17 @@ extension ViewResultVc : UICollectionViewDelegate , UICollectionViewDataSource ,
         vc.titleImage = text
         vc.idLabelTitle = Id
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.width * 0.4865, height: self.view.frame.width * 0.45)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.1
     }
 }
 struct Alert {

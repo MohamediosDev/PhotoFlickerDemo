@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,11 +17,11 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dpt-Mo-qaI">
-                        <rect key="frame" x="0.0" y="0.0" width="294" height="235"/>
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="282.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y02-42-a7x">
-                        <rect key="frame" x="0.0" y="235" width="294" height="79"/>
-                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                        <rect key="frame" x="5" y="287.5" width="284" height="21.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -31,12 +31,12 @@
             <constraints>
                 <constraint firstItem="Dpt-Mo-qaI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1hI-yh-f7C"/>
                 <constraint firstAttribute="trailing" secondItem="Dpt-Mo-qaI" secondAttribute="trailing" id="4xS-i6-2Kl"/>
+                <constraint firstAttribute="bottom" secondItem="Y02-42-a7x" secondAttribute="bottom" constant="5" id="GpG-D0-aeL"/>
                 <constraint firstItem="Dpt-Mo-qaI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="M6r-kf-sgk"/>
-                <constraint firstItem="Y02-42-a7x" firstAttribute="top" secondItem="Dpt-Mo-qaI" secondAttribute="bottom" id="Ria-hd-fiO"/>
-                <constraint firstItem="Dpt-Mo-qaI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.748408" id="Zuf-un-kkd"/>
-                <constraint firstAttribute="trailing" secondItem="Y02-42-a7x" secondAttribute="trailing" id="gAk-cw-tOd"/>
-                <constraint firstAttribute="bottom" secondItem="Y02-42-a7x" secondAttribute="bottom" id="hS8-u4-LUi"/>
-                <constraint firstItem="Y02-42-a7x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jDw-OU-cQF"/>
+                <constraint firstAttribute="trailing" secondItem="Y02-42-a7x" secondAttribute="trailing" constant="5" id="Txn-zf-m9u"/>
+                <constraint firstItem="Dpt-Mo-qaI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.9" id="Zuf-un-kkd"/>
+                <constraint firstItem="Y02-42-a7x" firstAttribute="top" secondItem="Dpt-Mo-qaI" secondAttribute="bottom" constant="5" id="d0s-nQ-4Zq"/>
+                <constraint firstItem="Y02-42-a7x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="zag-bL-5PF"/>
             </constraints>
             <size key="customSize" width="294" height="314"/>
             <connections>

@@ -18,10 +18,10 @@ class photoCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        photoImageView.layer.cornerRadius = 14
         KingfisherManager.shared.cache.clearMemoryCache()
         KingfisherManager.shared.cache.clearDiskCache()
         KingfisherManager.shared.cache.cleanExpiredDiskCache()
+       
 
     }
     func configurecell(image:String) {
